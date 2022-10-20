@@ -14,7 +14,6 @@ let app = express();
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');// express -e configered view engine to ejs
-app.set('view engine', 'html');
 
 app.use(logger('dev'));
 app.use(express.json());
