@@ -4,7 +4,9 @@ var app = express();
 
 app.set('view engine', 'ejs');
 
-
+router.get('/', (req, res) => {
+  res.render('index');
+});
 
 // /* GET home page. */
 // router.get('/', function(req, res, next) {
