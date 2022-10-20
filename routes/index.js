@@ -31,9 +31,9 @@ router.get('/home', function(req, res, next) {
 
 
 /* GET About page. */
-// router.get('/about', function(req, res, next) {
-//   res.render('./pages/about');
-// });
+ router.get('/about', function(req, res, next) {
+  res.render('Pages/about');
+});
 
 /* GET About page. */
 router.get('/about', function(req, res, next) {
