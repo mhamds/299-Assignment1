@@ -37,7 +37,7 @@ router.get('/home', function(req, res, next) {
 
 /* GET About page. */
 router.get('/about', function(req, res, next) {
-  res.render('About', { title: 'About' });
+  res.render('Pages/About', { title: 'About' });
 });
 
 /* GET Products page. */
@@ -47,7 +47,7 @@ router.get('/about', function(req, res, next) {
 
 /* GET Projects page. */
 router.get('/projects', function(req, res, next) {
-  res.render('index', { title: 'Projects' });
+  res.render('Pages/Projects', { title: 'Projects' });
 });
 
 /* GET Services page. */
@@ -57,7 +57,7 @@ router.get('/projects', function(req, res, next) {
 
 /* GET Services page. */
 router.get('/services', function(req, res, next) {
-  res.render('index', { title: 'Services' });
+  res.render('Pages/Services', { title: 'Services' });
 });
 
 
@@ -68,7 +68,7 @@ router.get('/services', function(req, res, next) {
 
 /* GET Contact page. */
 router.get('/contact', function(req, res, next) {
-  res.render('index', { title: 'contact' });
+  res.render('Pages/Contact', { title: 'contact' });
 });
 
 module.exports = router;
