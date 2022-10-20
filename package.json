@@ -1,11 +1,10 @@
 {
   "name": "299-assignment1",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
   },
-
   "engines": {
     "node": "^16.17.1",
     "npm": "^8.15.0"
@@ -21,5 +20,18 @@
     "jquery": "^3.6.1",
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
-  }
+  },
+  "description": "portfolio app",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhamds/299-Assignment1.git"
+  },
+  "author": "Mohammed Hamd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mhamds/299-Assignment1/issues"
+  },
+  "homepage": "https://github.com/mhamds/299-Assignment1#readme"
 }
