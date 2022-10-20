@@ -25,23 +25,23 @@ router.get('/home', function(req, res, next) {
 
 /* GET About page. */
 router.get('/about', function(req, res, next) {
-  res.render('pages/about');
+  res.render('./pages/about');
 });
 
 /* GET Products page. */
 router.get('/projects', function(req, res, next) {
-  res.render('pages/projects');
+  res.render('./pages/projects');
 });
 
 /* GET Services page. */
 router.get('/services', function(req, res, next) {
-  res.render('pages/services');
+  res.render('./pages/services');
 });
 
 
 /* GET Contact us page. */
 router.get('/contact', function(req, res, next) {
-  res.render('pages/contact');
+  res.render('./pages/contact');
 });
 
 module.exports = router;
