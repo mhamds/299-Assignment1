@@ -20,13 +20,13 @@ router.get('/', function(req, res, next) {
 
 
 /* GET home page. */
-// router.get('/home', function(req, res, next) {
-//   res.render('./pages/home');
-// });
+router.get('/home', function(req, res, next) {
+  res.render('Pages/home');
+});
 
 /* GET home page. */
 router.get('/home', function(req, res, next) {
-  res.render('home', { title: 'Home' });
+  res.render('Pages/Home', { title: 'Home' });
 });
 
 
@@ -37,7 +37,7 @@ router.get('/home', function(req, res, next) {
 
 /* GET About page. */
 router.get('/about', function(req, res, next) {
-  res.render('about.ejs', { title: 'About' });
+  res.render('About', { title: 'About' });
 });
 
 /* GET Products page. */
