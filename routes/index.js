@@ -8,15 +8,15 @@ app.set('view engine', 'ejs');
 //   res.render('index');
 // });
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('home', { title: 'Home' });
-});
-
 // /* GET home page. */
 // router.get('/', function(req, res, next) {
-//   res.render('./pages/home'); check the capital p might be the reason... 
+//   res.render('home', { title: 'Home' });
 // });
+
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('Pages/home'); 
+});
 
 
 /* GET home page. */
@@ -25,9 +25,9 @@ router.get('/home', function(req, res, next) {
 });
 
 /* GET home page. */
-router.get('/home', function(req, res, next) {
-  res.render('Pages/Home', { title: 'Home' });
-});
+// router.get('/home', function(req, res, next) {
+//   res.render('Pages/Home', { title: 'Home' });
+// });
 
 
 /* GET About page. */
@@ -36,39 +36,39 @@ router.get('/home', function(req, res, next) {
 });
 
 /* GET About page. */
-router.get('/about', function(req, res, next) {
-  res.render('Pages/About', { title: 'About' });
-});
-
-/* GET Products page. */
-// router.get('/projects', function(req, res, next) {
-//   res.render('./pages/projects');
+// router.get('/about', function(req, res, next) {
+//   res.render('Pages/About', { title: 'About' });
 // });
 
-/* GET Projects page. */
+/* GET Products page. */
 router.get('/projects', function(req, res, next) {
-  res.render('Pages/Projects', { title: 'Projects' });
+  res.render('Pages/projects');
 });
 
-/* GET Services page. */
-// router.get('/services', function(req, res, next) {
-//   res.render('./pages/services');
+/* GET Projects page. */
+// router.get('/projects', function(req, res, next) {
+//   res.render('Pages/Projects', { title: 'Projects' });
 // });
 
 /* GET Services page. */
 router.get('/services', function(req, res, next) {
-  res.render('Pages/Services', { title: 'Services' });
+  res.render('Pages/services');
 });
+
+/* GET Services page. */
+// router.get('/services', function(req, res, next) {
+//   res.render('Pages/Services', { title: 'Services' });
+// });
 
 
 /* GET Contact us page. */
-// router.get('/contact', function(req, res, next) {
-//   res.render('./pages/contact');
-// });
+router.get('/contact', function(req, res, next) {
+  res.render('Pages/contact');
+});
 
 /* GET Contact page. */
-router.get('/contact', function(req, res, next) {
-  res.render('Pages/Contact', { title: 'contact' });
-});
+// router.get('/contact', function(req, res, next) {
+//   res.render('Pages/Contact', { title: 'contact' });
+// });
 
 module.exports = router;
