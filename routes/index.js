@@ -10,12 +10,12 @@ app.set('view engine', 'ejs');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Home' });
+  res.render('Pages', { title: 'Home' });
 });
 
 // /* GET home page. */
 // router.get('/', function(req, res, next) {
-//   res.render('./pages/home');
+//   res.render('./pages/home'); check the capital p might be the reason... 
 // });
 
 
@@ -26,7 +26,7 @@ router.get('/', function(req, res, next) {
 
 /* GET home page. */
 router.get('/home', function(req, res, next) {
-  res.render('index', { title: 'Home' });
+  res.render('Pages', { title: 'Home' });
 });
 
 
@@ -37,7 +37,7 @@ router.get('/home', function(req, res, next) {
 
 /* GET About page. */
 router.get('/about', function(req, res, next) {
-  res.render('index', { title: 'About' });
+  res.render('Pages', { title: 'About' });
 });
 
 /* GET Products page. */
